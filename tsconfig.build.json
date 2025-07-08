@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "teardown/*": ["dist/src/*"],
-      "teardown": ["dist/src/index.ts"]
+      "@teardown/mcp/*": ["dist/src/*"],
+      "@teardown/mcp": ["dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

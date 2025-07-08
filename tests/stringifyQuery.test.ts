@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { Teardown } from 'teardown';
+import { Teardown } from '@teardown/mcp';
 
 const { stringifyQuery } = Teardown.prototype as any;
 

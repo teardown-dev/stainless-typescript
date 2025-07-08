@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^teardown(/.*)?',
+              regex: '^@teardown/mcp(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],
