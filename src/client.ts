@@ -129,7 +129,7 @@ export class Teardown {
    * API Client for interfacing with the Teardown API.
    *
    * @param {string | null | undefined} [opts.apiKey=process.env['TEARDOWN_API_KEY'] ?? null]
-   * @param {string} [opts.baseURL=process.env['TEARDOWN_BASE_URL'] ?? https://api.example.com] - Override the default base URL for the API.
+   * @param {string} [opts.baseURL=process.env['TEARDOWN_BASE_URL'] ?? https://relay.teardown.dev] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
    * @param {Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
@@ -145,7 +145,7 @@ export class Teardown {
     const options: ClientOptions = {
       apiKey,
       ...opts,
-      baseURL: baseURL || `https://api.example.com`,
+      baseURL: baseURL || `https://relay.teardown.dev`,
     };
 
     this.baseURL = options.baseURL!;
@@ -190,7 +190,7 @@ export class Teardown {
    * Check whether the base URL is set to its default.
    */
   #baseURLOverridden(): boolean {
-    return this.baseURL !== 'https://api.example.com';
+    return this.baseURL !== 'https://relay.teardown.dev';
   }
 
   /**

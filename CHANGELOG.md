@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2025-07-08)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Features
+
+* **api:** enable teamdown mcp on cloudflare workers ([a894b54](https://github.com/teardown-dev/stainless-typescript/commit/a894b541aeae588fe722ccf2674774a806db4db1))
+* **api:** manual updates ([240e832](https://github.com/teardown-dev/stainless-typescript/commit/240e8326f40a008f13102495c8811c1baf87ad9c))
+
 ## 0.1.0-alpha.1 (2025-07-08)
 
 Full Changelog: [v0.0.1-alpha.0...v0.1.0-alpha.1](https://github.com/teardown-dev/stainless-typescript/compare/v0.0.1-alpha.0...v0.1.0-alpha.1)
