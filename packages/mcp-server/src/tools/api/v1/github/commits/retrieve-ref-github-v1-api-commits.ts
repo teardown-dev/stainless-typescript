@@ -1,0 +1,41 @@
+// File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+import { asTextContentResult } from 'teardown-mcp/tools/types';
+
+import { Tool } from '@modelcontextprotocol/sdk/types.js';
+import type { Metadata } from '../../../../';
+import Teardown from '@teardown/mcp';
+
+export const metadata: Metadata = {
+  resource: 'api.v1.github.commits',
+  operation: 'read',
+  tags: [],
+  httpMethod: 'get',
+  httpPath: '/api/v1/github/commits/ref',
+  operationId: 'getApiV1GithubCommitsRef',
+};
+
+export const tool: Tool = {
+  name: 'retrieve_ref_github_v1_api_commits',
+  description:
+    'Fetches details for a specific commit (by SHA, branch, or tag name) from the GitHub repository associated with the specified project ID.',
+  inputSchema: {
+    type: 'object',
+    properties: {
+      ref: {
+        type: 'string',
+      },
+      'td-project-id': {
+        type: 'string',
+      },
+    },
+  },
+};
+
+export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {
+  const body = args as any;
+  const response = await client.api.v1.github.commits.retrieveRef(body).asResponse();
+  return asTextContentResult(await response.text());
+};
+
+export default { metadata, tool, handler };
