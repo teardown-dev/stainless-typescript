@@ -71,6 +71,16 @@ export class CustomDomains extends APIResource {
   }
 
   /**
+   * Looks up a custom domain by its name for middleware.
+   */
+  lookupByDomain(domainName: string, options?: RequestOptions): APIPromise<void> {
+    return this._client.get(path`/api/v1/custom-domains/lookup-by-domain/${domainName}`, {
+      ...options,
+      headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),
+    });
+  }
+
+  /**
    * Get all custom domains for a project
    */
   retrieveCustomDomains(

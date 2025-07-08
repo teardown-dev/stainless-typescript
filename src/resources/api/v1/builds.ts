@@ -9,16 +9,11 @@ import { path } from '../../../internal/utils/path';
 
 export class Builds extends APIResource {
   /**
-   * Get all builds for a distribution group
+   * Get a build by ID
    */
-  retrieve(
-    distributionGroupID: string,
-    params: BuildRetrieveParams,
-    options?: RequestOptions,
-  ): APIPromise<void> {
-    const { 'td-project-id': tdProjectID, ...query } = params;
-    return this._client.get(path`/api/v1/builds/distribution-group/${distributionGroupID}`, {
-      query,
+  retrieve(buildID: string, params: BuildRetrieveParams, options?: RequestOptions): APIPromise<void> {
+    const { 'td-project-id': tdProjectID } = params;
+    return this._client.get(path`/api/v1/builds/${buildID}`, {
       ...options,
       headers: buildHeaders([{ Accept: '*/*', 'td-project-id': tdProjectID }, options?.headers]),
     });
@@ -52,18 +47,25 @@ export class Builds extends APIResource {
       headers: buildHeaders([{ Accept: '*/*', 'td-project-id': tdProjectID }, options?.headers]),
     });
   }
+
+  /**
+   * Get a build by build number
+   */
+  retrieveByBuildNumber(
+    buildNumber: string,
+    params: BuildRetrieveByBuildNumberParams,
+    options?: RequestOptions,
+  ): APIPromise<void> {
+    const { 'td-project-id': tdProjectID } = params;
+    return this._client.get(path`/api/v1/builds/build-number/${buildNumber}`, {
+      ...options,
+      headers: buildHeaders([{ Accept: '*/*', 'td-project-id': tdProjectID }, options?.headers]),
+    });
+  }
 }
 
 export interface BuildRetrieveParams {
-  /**
-   * Header param:
-   */
   'td-project-id': string;
-
-  /**
-   * Query param:
-   */
-  limit?: number;
 }
 
 export interface BuildUpdateParams {
@@ -97,10 +99,15 @@ export interface BuildListParams {
   'td-project-id': string;
 }
 
+export interface BuildRetrieveByBuildNumberParams {
+  'td-project-id': string;
+}
+
 export declare namespace Builds {
   export {
     type BuildRetrieveParams as BuildRetrieveParams,
     type BuildUpdateParams as BuildUpdateParams,
     type BuildListParams as BuildListParams,
+    type BuildRetrieveByBuildNumberParams as BuildRetrieveByBuildNumberParams,
   };
 }
