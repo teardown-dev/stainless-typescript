@@ -85,9 +85,10 @@ Methods:
 
 Methods:
 
-- <code title="get /api/v1/builds/distribution-group/{distributionGroupId}">client.api.v1.builds.<a href="./src/resources/api/v1/builds.ts">retrieve</a>(distributionGroupID, { ...params }) -> void</code>
+- <code title="get /api/v1/builds/{buildId}">client.api.v1.builds.<a href="./src/resources/api/v1/builds.ts">retrieve</a>(buildID, { ...params }) -> void</code>
 - <code title="patch /api/v1/builds/{buildId}">client.api.v1.builds.<a href="./src/resources/api/v1/builds.ts">update</a>(buildID, { ...params }) -> void</code>
 - <code title="get /api/v1/builds">client.api.v1.builds.<a href="./src/resources/api/v1/builds.ts">list</a>({ ...params }) -> void</code>
+- <code title="get /api/v1/builds/build-number/{buildNumber}">client.api.v1.builds.<a href="./src/resources/api/v1/builds.ts">retrieveByBuildNumber</a>(buildNumber, { ...params }) -> void</code>
 
 ### Commits
 
@@ -104,6 +105,7 @@ Methods:
 - <code title="patch /api/v1/custom-domains/{id}">client.api.v1.customDomains.<a href="./src/resources/api/v1/custom-domains/custom-domains.ts">update</a>(id, { ...params }) -> void</code>
 - <code title="delete /api/v1/custom-domains/{id}">client.api.v1.customDomains.<a href="./src/resources/api/v1/custom-domains/custom-domains.ts">delete</a>(id, { ...params }) -> void</code>
 - <code title="post /api/v1/custom-domains">client.api.v1.customDomains.<a href="./src/resources/api/v1/custom-domains/custom-domains.ts">customDomains</a>({ ...params }) -> void</code>
+- <code title="get /api/v1/custom-domains/lookup-by-domain/{domainName}">client.api.v1.customDomains.<a href="./src/resources/api/v1/custom-domains/custom-domains.ts">lookupByDomain</a>(domainName) -> void</code>
 - <code title="get /api/v1/custom-domains">client.api.v1.customDomains.<a href="./src/resources/api/v1/custom-domains/custom-domains.ts">retrieveCustomDomains</a>({ ...params }) -> void</code>
 
 #### Verify
@@ -121,6 +123,7 @@ Methods:
 - <code title="patch /api/v1/deep-links/{id}">client.api.v1.deepLinks.<a href="./src/resources/api/v1/deep-links.ts">update</a>(id, { ...params }) -> void</code>
 - <code title="delete /api/v1/deep-links/{id}">client.api.v1.deepLinks.<a href="./src/resources/api/v1/deep-links.ts">delete</a>(id, { ...params }) -> void</code>
 - <code title="post /api/v1/deep-links">client.api.v1.deepLinks.<a href="./src/resources/api/v1/deep-links.ts">deepLinks</a>({ ...params }) -> void</code>
+- <code title="get /api/v1/deep-links/by-code/{shortCode}">client.api.v1.deepLinks.<a href="./src/resources/api/v1/deep-links.ts">retrieveByShortCode</a>(shortCode) -> void</code>
 - <code title="get /api/v1/deep-links">client.api.v1.deepLinks.<a href="./src/resources/api/v1/deep-links.ts">retrieveDeepLinks</a>({ ...params }) -> void</code>
 
 ### DistributionGroups
@@ -273,6 +276,11 @@ Methods:
 
 - <code title="get /api/v1/secrets/value/{secretId}">client.api.v1.secrets.<a href="./src/resources/api/v1/secrets.ts">retrieve</a>(secretID) -> void</code>
 - <code title="put /api/v1/secrets/{entity_type}/{entity_id}/{name}">client.api.v1.secrets.<a href="./src/resources/api/v1/secrets.ts">update</a>(name, { ...params }) -> void</code>
+- <code title="get /api/v1/secrets/{entity_type}/{entity_id}/{name}">client.api.v1.secrets.<a href="./src/resources/api/v1/secrets.ts">retrieveByName</a>(name, { ...params }) -> void</code>
+- <code title="get /api/v1/secrets/{entity_type}/{entity_id}">client.api.v1.secrets.<a href="./src/resources/api/v1/secrets.ts">retrieveForEntity</a>(entityID, { ...params }) -> void</code>
+- <code title="get /api/v1/secrets/organisation/{orgId}/{name}">client.api.v1.secrets.<a href="./src/resources/api/v1/secrets.ts">retrieveOrganisationSecret</a>(name, { ...params }) -> void</code>
+- <code title="get /api/v1/secrets/project/{projectId}/{name}">client.api.v1.secrets.<a href="./src/resources/api/v1/secrets.ts">retrieveProjectSecret</a>(name, { ...params }) -> void</code>
+- <code title="get /api/v1/secrets/user/{userId}/{name}">client.api.v1.secrets.<a href="./src/resources/api/v1/secrets.ts">retrieveUserSecret</a>(name, { ...params }) -> void</code>
 
 ### SentryConfig
 

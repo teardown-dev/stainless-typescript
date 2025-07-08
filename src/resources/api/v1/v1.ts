@@ -24,7 +24,13 @@ import {
   BuildConfigUpdateBuildConfigParams,
 } from './build-config';
 import * as BuildsAPI from './builds';
-import { BuildListParams, BuildRetrieveParams, BuildUpdateParams, Builds } from './builds';
+import {
+  BuildListParams,
+  BuildRetrieveByBuildNumberParams,
+  BuildRetrieveParams,
+  BuildUpdateParams,
+  Builds,
+} from './builds';
 import * as CommitsAPI from './commits';
 import { CommitListParams, CommitRetrieveParams, Commits } from './commits';
 import * as DeepLinksAPI from './deep-links';
@@ -87,7 +93,15 @@ import {
   ReleaseConfigUpdateReleaseConfigParams,
 } from './release-config';
 import * as SecretsAPI from './secrets';
-import { SecretUpdateParams, Secrets } from './secrets';
+import {
+  SecretRetrieveByNameParams,
+  SecretRetrieveForEntityParams,
+  SecretRetrieveOrganisationSecretParams,
+  SecretRetrieveProjectSecretParams,
+  SecretRetrieveUserSecretParams,
+  SecretUpdateParams,
+  Secrets,
+} from './secrets';
 import * as SentryConfigAPI from './sentry-config';
 import {
   SentryConfig,
@@ -295,6 +309,7 @@ export declare namespace V1 {
     type BuildRetrieveParams as BuildRetrieveParams,
     type BuildUpdateParams as BuildUpdateParams,
     type BuildListParams as BuildListParams,
+    type BuildRetrieveByBuildNumberParams as BuildRetrieveByBuildNumberParams,
   };
 
   export {
@@ -385,7 +400,15 @@ export declare namespace V1 {
     type ReleaseConfigUpdateReleaseConfigParams as ReleaseConfigUpdateReleaseConfigParams,
   };
 
-  export { Secrets as Secrets, type SecretUpdateParams as SecretUpdateParams };
+  export {
+    Secrets as Secrets,
+    type SecretUpdateParams as SecretUpdateParams,
+    type SecretRetrieveByNameParams as SecretRetrieveByNameParams,
+    type SecretRetrieveForEntityParams as SecretRetrieveForEntityParams,
+    type SecretRetrieveOrganisationSecretParams as SecretRetrieveOrganisationSecretParams,
+    type SecretRetrieveProjectSecretParams as SecretRetrieveProjectSecretParams,
+    type SecretRetrieveUserSecretParams as SecretRetrieveUserSecretParams,
+  };
 
   export {
     SentryConfig as SentryConfig,

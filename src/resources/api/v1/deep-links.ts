@@ -67,6 +67,16 @@ export class DeepLinks extends APIResource {
   }
 
   /**
+   * Get a deep link by its short code (public endpoint)
+   */
+  retrieveByShortCode(shortCode: string, options?: RequestOptions): APIPromise<void> {
+    return this._client.get(path`/api/v1/deep-links/by-code/${shortCode}`, {
+      ...options,
+      headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),
+    });
+  }
+
+  /**
    * Get all deep links for a project
    */
   retrieveDeepLinks(params: DeepLinkRetrieveDeepLinksParams, options?: RequestOptions): APIPromise<void> {

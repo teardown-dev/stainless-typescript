@@ -22,7 +22,13 @@ export {
   type BuildConfigRetrieveBuildConfigParams,
   type BuildConfigUpdateBuildConfigParams,
 } from './build-config';
-export { Builds, type BuildRetrieveParams, type BuildUpdateParams, type BuildListParams } from './builds';
+export {
+  Builds,
+  type BuildRetrieveParams,
+  type BuildUpdateParams,
+  type BuildListParams,
+  type BuildRetrieveByBuildNumberParams,
+} from './builds';
 export { Commits, type CommitRetrieveParams, type CommitListParams } from './commits';
 export {
   CustomDomains,
@@ -93,7 +99,15 @@ export {
   type ReleaseConfigRetrieveReleaseConfigParams,
   type ReleaseConfigUpdateReleaseConfigParams,
 } from './release-config';
-export { Secrets, type SecretUpdateParams } from './secrets';
+export {
+  Secrets,
+  type SecretUpdateParams,
+  type SecretRetrieveByNameParams,
+  type SecretRetrieveForEntityParams,
+  type SecretRetrieveOrganisationSecretParams,
+  type SecretRetrieveProjectSecretParams,
+  type SecretRetrieveUserSecretParams,
+} from './secrets';
 export { Sentry, type SentryRefreshTokenParams, type SentryRetrieveSetupParams } from './sentry/index';
 export {
   SentryConfig,
