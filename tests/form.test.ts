@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'teardown/internal/uploads';
-import { toFile } from 'teardown/core/uploads';
+import { multipartFormRequestOptions, createForm } from '@teardown/mcp/internal/uploads';
+import { toFile } from '@teardown/mcp/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

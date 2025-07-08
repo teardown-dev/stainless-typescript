@@ -1,7 +1,7 @@
 import iconv from 'iconv-lite';
-import { stringify } from 'teardown/internal/qs';
-import { encode } from 'teardown/internal/qs/utils';
-import { StringifyOptions } from 'teardown/internal/qs/types';
+import { stringify } from '@teardown/mcp/internal/qs';
+import { encode } from '@teardown/mcp/internal/qs/utils';
+import { StringifyOptions } from '@teardown/mcp/internal/qs/types';
 import { empty_test_cases } from './empty-keys-cases';
 import assert from 'assert';
 
