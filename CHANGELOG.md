@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.6 (2025-07-11)
+
+Full Changelog: [v0.1.0-alpha.5...v0.1.0-alpha.6](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.5...v0.1.0-alpha.6)
+
+### Bug Fixes
+
+* **mcp:** relax input type for asTextContextResult ([fd561c6](https://github.com/teardown-dev/stainless-typescript/commit/fd561c6a6e622644059cf24906095dc37afb8e41))
+
 ## 0.1.0-alpha.5 (2025-07-11)
 
 Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
