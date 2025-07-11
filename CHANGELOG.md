@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.0-alpha.5 (2025-07-11)
+
+Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
+
+### Features
+
+* **api:** api update ([3f8e7f7](https://github.com/teardown-dev/stainless-typescript/commit/3f8e7f7d6cbb79bc62062d7fdea7c42fdcac7a2c))
+* **mcp:** support filtering tool results by a jq expression ([8bc33be](https://github.com/teardown-dev/stainless-typescript/commit/8bc33be9bd2c4d470876bb55895adc7dceb1db27))
+
+
+### Chores
+
+* make some internal functions async ([896e5ee](https://github.com/teardown-dev/stainless-typescript/commit/896e5eea9fb1f490d86fa8179ff39a013964f7ec))
+
 ## 0.1.0-alpha.4 (2025-07-08)
 
 Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
