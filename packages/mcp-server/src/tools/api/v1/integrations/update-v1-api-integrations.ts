@@ -24,7 +24,17 @@ export const tool: Tool = {
     properties: {
       type: {
         type: 'string',
-        enum: ['APP_STORE_CONNECT', 'GOOGLE_PLAY_STORE', 'BITRISE', 'SENTRY', 'VERCEL', 'POSTHOG', 'EXPO'],
+        enum: [
+          'APP_STORE_CONNECT',
+          'GOOGLE_PLAY_STORE',
+          'BITRISE',
+          'CODE_MAGIC',
+          'SENTRY',
+          'VERCEL',
+          'POSTHOG',
+          'EXPO',
+          'CIRCLE_CI',
+        ],
       },
       'td-project-id': {
         type: 'string',
