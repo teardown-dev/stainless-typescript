@@ -12,7 +12,16 @@ export class Integrations extends APIResource {
    * Get a specific integration
    */
   retrieve(
-    type: 'APP_STORE_CONNECT' | 'GOOGLE_PLAY_STORE' | 'BITRISE' | 'SENTRY' | 'VERCEL' | 'POSTHOG' | 'EXPO',
+    type:
+      | 'APP_STORE_CONNECT'
+      | 'GOOGLE_PLAY_STORE'
+      | 'BITRISE'
+      | 'CODE_MAGIC'
+      | 'SENTRY'
+      | 'VERCEL'
+      | 'POSTHOG'
+      | 'EXPO'
+      | 'CIRCLE_CI',
     params: IntegrationRetrieveParams,
     options?: RequestOptions,
   ): APIPromise<void> {
@@ -27,7 +36,16 @@ export class Integrations extends APIResource {
    * Save the fields for a specific integration type
    */
   update(
-    type: 'APP_STORE_CONNECT' | 'GOOGLE_PLAY_STORE' | 'BITRISE' | 'SENTRY' | 'VERCEL' | 'POSTHOG' | 'EXPO',
+    type:
+      | 'APP_STORE_CONNECT'
+      | 'GOOGLE_PLAY_STORE'
+      | 'BITRISE'
+      | 'CODE_MAGIC'
+      | 'SENTRY'
+      | 'VERCEL'
+      | 'POSTHOG'
+      | 'EXPO'
+      | 'CIRCLE_CI',
     params: IntegrationUpdateParams,
     options?: RequestOptions,
   ): APIPromise<void> {
@@ -53,7 +71,16 @@ export class Integrations extends APIResource {
    * Validate the credentials for a specific integration type
    */
   retrieveValidate(
-    type: 'APP_STORE_CONNECT' | 'GOOGLE_PLAY_STORE' | 'BITRISE' | 'SENTRY' | 'VERCEL' | 'POSTHOG' | 'EXPO',
+    type:
+      | 'APP_STORE_CONNECT'
+      | 'GOOGLE_PLAY_STORE'
+      | 'BITRISE'
+      | 'CODE_MAGIC'
+      | 'SENTRY'
+      | 'VERCEL'
+      | 'POSTHOG'
+      | 'EXPO'
+      | 'CIRCLE_CI',
     params: IntegrationRetrieveValidateParams,
     options?: RequestOptions,
   ): APIPromise<void> {
@@ -68,7 +95,16 @@ export class Integrations extends APIResource {
    * Get the configuration fields for a specific integration type
    */
   retrieveValues(
-    type: 'APP_STORE_CONNECT' | 'GOOGLE_PLAY_STORE' | 'BITRISE' | 'SENTRY' | 'VERCEL' | 'POSTHOG' | 'EXPO',
+    type:
+      | 'APP_STORE_CONNECT'
+      | 'GOOGLE_PLAY_STORE'
+      | 'BITRISE'
+      | 'CODE_MAGIC'
+      | 'SENTRY'
+      | 'VERCEL'
+      | 'POSTHOG'
+      | 'EXPO'
+      | 'CIRCLE_CI',
     params: IntegrationRetrieveValuesParams,
     options?: RequestOptions,
   ): APIPromise<void> {
@@ -83,7 +119,16 @@ export class Integrations extends APIResource {
    * Update the status of a specific integration type
    */
   updateStatus(
-    type: 'APP_STORE_CONNECT' | 'GOOGLE_PLAY_STORE' | 'BITRISE' | 'SENTRY' | 'VERCEL' | 'POSTHOG' | 'EXPO',
+    type:
+      | 'APP_STORE_CONNECT'
+      | 'GOOGLE_PLAY_STORE'
+      | 'BITRISE'
+      | 'CODE_MAGIC'
+      | 'SENTRY'
+      | 'VERCEL'
+      | 'POSTHOG'
+      | 'EXPO'
+      | 'CIRCLE_CI',
     params: IntegrationUpdateStatusParams,
     options?: RequestOptions,
   ): APIPromise<void> {
