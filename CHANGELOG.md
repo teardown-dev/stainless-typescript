@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.0-alpha.8 (2025-07-12)
+
+Full Changelog: [v0.1.0-alpha.7...v0.1.0-alpha.8](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.7...v0.1.0-alpha.8)
+
+### Chores
+
+* **internal:** codegen related update ([3f89ce1](https://github.com/teardown-dev/stainless-typescript/commit/3f89ce12ad968adace28d9623edf216d82b75cad))
+
+
+### Documentation
+
+* **mcp:** correct instructions for adding to claude web ([59bd42c](https://github.com/teardown-dev/stainless-typescript/commit/59bd42ce5480408663dfafc6b62a2c4ab3d05e10))
+
 ## 0.1.0-alpha.7 (2025-07-11)
 
 Full Changelog: [v0.1.0-alpha.6...v0.1.0-alpha.7](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.6...v0.1.0-alpha.7)
