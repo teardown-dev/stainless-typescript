@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.1.0-alpha.8 (2025-07-16)
+
+Full Changelog: [v0.1.0-alpha.7...v0.1.0-alpha.8](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.7...v0.1.0-alpha.8)
+
+### Bug Fixes
+
+* **mcp:** support jq filtering on cloudflare workers ([b121758](https://github.com/teardown-dev/stainless-typescript/commit/b1217580e6c37d802fc4ea879b3b61af67c7e50b))
+
+
+### Chores
+
+* **internal:** codegen related update ([3f89ce1](https://github.com/teardown-dev/stainless-typescript/commit/3f89ce12ad968adace28d9623edf216d82b75cad))
+* **mcp:** rework imports in tools ([d0d5509](https://github.com/teardown-dev/stainless-typescript/commit/d0d5509df571412f709c74b8ea01db6a494b8d65))
+
+
+### Documentation
+
+* **mcp:** correct instructions for adding to claude web ([59bd42c](https://github.com/teardown-dev/stainless-typescript/commit/59bd42ce5480408663dfafc6b62a2c4ab3d05e10))
+
 ## 0.1.0-alpha.7 (2025-07-11)
 
 Full Changelog: [v0.1.0-alpha.6...v0.1.0-alpha.7](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.6...v0.1.0-alpha.7)
