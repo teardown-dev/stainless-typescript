@@ -28,11 +28,7 @@ export const server = new McpServer(
     name: 'teardown_mcp_api',
     version: '0.1.0-alpha.8',
   },
-  {
-    capabilities: {
-      tools: {},
-    },
-  },
+  { capabilities: { tools: {} } },
 );
 
 /**
