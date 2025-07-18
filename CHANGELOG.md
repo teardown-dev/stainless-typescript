@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.0-alpha.9 (2025-07-18)
+
+Full Changelog: [v0.1.0-alpha.8...v0.1.0-alpha.9](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.8...v0.1.0-alpha.9)
+
+### Bug Fixes
+
+* **mcp:** include required section for top-level properties and support naming transformations ([d0c6173](https://github.com/teardown-dev/stainless-typescript/commit/d0c6173f4350bcb890316b68e5a51e8f13900f39))
+
+
+### Chores
+
+* **mcp:** formatting ([3340fee](https://github.com/teardown-dev/stainless-typescript/commit/3340feec921562612a9c79e58b3aaf8fde15c608))
+* **ts:** reorder package.json imports ([6badedc](https://github.com/teardown-dev/stainless-typescript/commit/6badedcd15dbf3368e70d76e3d05de3fe04afe7e))
+
 ## 0.1.0-alpha.8 (2025-07-16)
 
 Full Changelog: [v0.1.0-alpha.7...v0.1.0-alpha.8](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.7...v0.1.0-alpha.8)
