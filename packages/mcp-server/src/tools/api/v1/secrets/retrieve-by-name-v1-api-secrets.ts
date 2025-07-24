@@ -40,6 +40,9 @@ export const tool: Tool = {
     },
     required: ['entity_type', 'entity_id', 'name'],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {

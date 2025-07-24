@@ -40,6 +40,7 @@ export const tool: Tool = {
     },
     required: ['feedback', 'feedback_type', 'follow_up'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {
