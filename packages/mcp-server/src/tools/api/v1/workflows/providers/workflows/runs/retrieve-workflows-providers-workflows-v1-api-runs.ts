@@ -43,6 +43,9 @@ export const tool: Tool = {
     },
     required: ['providerType', 'workflowId', 'runId', 'td-project-id'],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {

@@ -37,6 +37,9 @@ export const tool: Tool = {
     },
     required: ['td-project-id'],
   },
+  annotations: {
+    idempotentHint: true,
+  },
 };
 
 export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {
