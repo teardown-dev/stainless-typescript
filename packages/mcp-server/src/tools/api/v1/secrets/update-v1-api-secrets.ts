@@ -43,6 +43,9 @@ export const tool: Tool = {
     },
     required: ['entity_type', 'entity_id', 'name', 'value'],
   },
+  annotations: {
+    idempotentHint: true,
+  },
 };
 
 export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {

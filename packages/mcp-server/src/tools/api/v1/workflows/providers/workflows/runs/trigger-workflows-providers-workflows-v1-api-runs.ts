@@ -49,6 +49,7 @@ export const tool: Tool = {
     },
     required: ['providerType', 'workflowId', 'branchName', 'commitSha', 'td-project-id'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {

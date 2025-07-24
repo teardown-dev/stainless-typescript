@@ -36,6 +36,9 @@ export const tool: Tool = {
     },
     required: ['userId', 'name'],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {

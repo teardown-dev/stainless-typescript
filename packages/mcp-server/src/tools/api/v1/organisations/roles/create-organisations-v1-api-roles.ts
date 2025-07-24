@@ -40,6 +40,7 @@ export const tool: Tool = {
     },
     required: ['id', 'role', 'user_id'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {

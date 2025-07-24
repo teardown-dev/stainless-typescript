@@ -42,6 +42,7 @@ export const tool: Tool = {
     },
     required: ['issuerId', 'privateKey', 'privateKeyId', 'td-project-id'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Teardown, args: Record<string, unknown> | undefined) => {
