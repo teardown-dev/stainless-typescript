@@ -24,6 +24,16 @@ export const tool: Tool = {
       'td-project-id': {
         type: 'string',
       },
+      limit: {
+        anyOf: [
+          {
+            type: 'string',
+          },
+          {
+            type: 'number',
+          },
+        ],
+      },
       jq_filter: {
         type: 'string',
         title: 'jq Filter',

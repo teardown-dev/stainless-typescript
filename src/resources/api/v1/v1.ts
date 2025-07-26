@@ -204,11 +204,12 @@ export class V1 extends APIResource {
   workflows: WorkflowsAPI.Workflows = new WorkflowsAPI.Workflows(this._client);
 
   /**
-   * Get all persons for a project
+   * Get all persons for a project with pagination
    */
   retrievePersons(params: V1RetrievePersonsParams, options?: RequestOptions): APIPromise<void> {
-    const { 'td-project-id': tdProjectID } = params;
+    const { 'td-project-id': tdProjectID, ...query } = params;
     return this._client.get('/api/v1/persons', {
+      query,
       ...options,
       headers: buildHeaders([{ Accept: '*/*', 'td-project-id': tdProjectID }, options?.headers]),
     });
@@ -227,7 +228,20 @@ export class V1 extends APIResource {
 }
 
 export interface V1RetrievePersonsParams {
+  /**
+   * Header param:
+   */
   'td-project-id': string;
+
+  /**
+   * Query param:
+   */
+  limit?: string;
+
+  /**
+   * Query param:
+   */
+  offset?: string;
 }
 
 export interface V1RetrieveReleasesParams {

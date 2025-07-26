@@ -175,7 +175,7 @@ The following tools are available in this MCP server.
 
 ### Resource `api.v1`:
 
-- `retrieve_persons_api_v1` (`read`): Get all persons for a project
+- `retrieve_persons_api_v1` (`read`): Get all persons for a project with pagination
 - `retrieve_releases_api_v1` (`read`): Fetches all releases for a specific project.
 
 ### Resource `api.v1.app_store_connect`:
