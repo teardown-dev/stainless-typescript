@@ -22,7 +22,11 @@ describe('resource v1', () => {
 
   // skipped: tests are disabled for the time being
   test.skip('retrievePersons: required and optional params', async () => {
-    const response = await client.api.v1.retrievePersons({ 'td-project-id': 'td-project-id' });
+    const response = await client.api.v1.retrievePersons({
+      'td-project-id': 'td-project-id',
+      limit: 'limit',
+      offset: 'offset',
+    });
   });
 
   // skipped: tests are disabled for the time being

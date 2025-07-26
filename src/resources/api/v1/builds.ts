@@ -41,8 +41,9 @@ export class Builds extends APIResource {
    * Get all builds for a project
    */
   list(params: BuildListParams, options?: RequestOptions): APIPromise<void> {
-    const { 'td-project-id': tdProjectID } = params;
+    const { 'td-project-id': tdProjectID, ...query } = params;
     return this._client.get('/api/v1/builds', {
+      query,
       ...options,
       headers: buildHeaders([{ Accept: '*/*', 'td-project-id': tdProjectID }, options?.headers]),
     });
@@ -96,7 +97,15 @@ export interface BuildUpdateParams {
 }
 
 export interface BuildListParams {
+  /**
+   * Header param:
+   */
   'td-project-id': string;
+
+  /**
+   * Query param:
+   */
+  limit?: string | number;
 }
 
 export interface BuildRetrieveByBuildNumberParams {
