@@ -25,14 +25,7 @@ export const tool: Tool = {
         type: 'string',
       },
       limit: {
-        anyOf: [
-          {
-            type: 'string',
-          },
-          {
-            type: 'number',
-          },
-        ],
+        type: 'number',
       },
       jq_filter: {
         type: 'string',
