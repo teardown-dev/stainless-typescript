@@ -62,7 +62,7 @@ describe('resource builds', () => {
 
   // skipped: tests are disabled for the time being
   test.skip('list: required and optional params', async () => {
-    const response = await client.api.v1.builds.list({ 'td-project-id': 'td-project-id', limit: 'string' });
+    const response = await client.api.v1.builds.list({ 'td-project-id': 'td-project-id', limit: 0 });
   });
 
   // skipped: tests are disabled for the time being
