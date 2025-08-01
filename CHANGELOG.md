@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.0-alpha.12 (2025-08-01)
+
+Full Changelog: [v0.1.0-alpha.11...v0.1.0-alpha.12](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.11...v0.1.0-alpha.12)
+
+### Bug Fixes
+
+* **mcp:** avoid sending `jq_filter` to base API ([fb9d47f](https://github.com/teardown-dev/stainless-typescript/commit/fb9d47f8f2c07fa1260b762edfe4088d2f1237fd))
+* **mcp:** reverse validJson capability option and limit scope ([18b937e](https://github.com/teardown-dev/stainless-typescript/commit/18b937ee00e1a57e4ec79c42cdcee4678ffd1cf9))
+
+
+### Chores
+
+* **internal:** remove redundant imports config ([a4d7987](https://github.com/teardown-dev/stainless-typescript/commit/a4d798762de1f889dd40e2123b1aa5ea54ed940e))
+
 ## 0.1.0-alpha.11 (2025-07-27)
 
 Full Changelog: [v0.1.0-alpha.10...v0.1.0-alpha.11](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.10...v0.1.0-alpha.11)
