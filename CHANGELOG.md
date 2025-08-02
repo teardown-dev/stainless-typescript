@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.13 (2025-08-02)
+
+Full Changelog: [v0.1.0-alpha.12...v0.1.0-alpha.13](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.12...v0.1.0-alpha.13)
+
+### Features
+
+* **mcp:** add logging when environment variable is set ([77dc18c](https://github.com/teardown-dev/stainless-typescript/commit/77dc18ce02d118e22ddf58f2e4c06423bbc87bcf))
+
 ## 0.1.0-alpha.12 (2025-08-01)
 
 Full Changelog: [v0.1.0-alpha.11...v0.1.0-alpha.12](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.11...v0.1.0-alpha.12)
