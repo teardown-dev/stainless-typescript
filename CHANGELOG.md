@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.1.0-alpha.13 (2025-08-07)
+
+Full Changelog: [v0.1.0-alpha.12...v0.1.0-alpha.13](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.12...v0.1.0-alpha.13)
+
+### Features
+
+* **mcp:** add logging when environment variable is set ([77dc18c](https://github.com/teardown-dev/stainless-typescript/commit/77dc18ce02d118e22ddf58f2e4c06423bbc87bcf))
+* **mcp:** add unix socket option for remote MCP ([463c4a1](https://github.com/teardown-dev/stainless-typescript/commit/463c4a16dc83f7ac8e983f7995f6fce910ddf32e))
+* **mcp:** remote server with passthru auth ([404be46](https://github.com/teardown-dev/stainless-typescript/commit/404be465c781d6fb3a37e0e9d584727c6d3ecffa))
+
+
+### Bug Fixes
+
+* **mcp:** fix bug in header handling ([2827194](https://github.com/teardown-dev/stainless-typescript/commit/2827194fadd8bca154ac6bf4f5c7627bbcb12205))
+
+
+### Chores
+
+* **internal:** move publish config ([74706b7](https://github.com/teardown-dev/stainless-typescript/commit/74706b7c4bf52f83ae61888f75bd56d4ca342ad2))
+* **mcp:** refactor streamable http transport ([090527e](https://github.com/teardown-dev/stainless-typescript/commit/090527e2da44cd266b3071d13136495c533e6546))
+
 ## 0.1.0-alpha.12 (2025-08-01)
 
 Full Changelog: [v0.1.0-alpha.11...v0.1.0-alpha.12](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.11...v0.1.0-alpha.12)
