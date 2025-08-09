@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.14 (2025-08-09)
+
+Full Changelog: [v0.1.0-alpha.13...v0.1.0-alpha.14](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.13...v0.1.0-alpha.14)
+
+### Chores
+
+* update @stainless-api/prism-cli to v5.15.0 ([24f293d](https://github.com/teardown-dev/stainless-typescript/commit/24f293d0dd19f201a79e715887fb66a06522df33))
+
 ## 0.1.0-alpha.13 (2025-08-07)
 
 Full Changelog: [v0.1.0-alpha.12...v0.1.0-alpha.13](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.12...v0.1.0-alpha.13)
