@@ -24,7 +24,14 @@ export const tool: Tool = {
         type: 'string',
       },
       limit: {
-        type: 'number',
+        anyOf: [
+          {
+            type: 'string',
+          },
+          {
+            type: 'number',
+          },
+        ],
       },
     },
     required: ['td-project-id'],

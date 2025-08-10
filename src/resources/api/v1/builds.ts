@@ -105,7 +105,7 @@ export interface BuildListParams {
   /**
    * Query param:
    */
-  limit?: number;
+  limit?: string | number;
 }
 
 export interface BuildRetrieveByBuildNumberParams {
