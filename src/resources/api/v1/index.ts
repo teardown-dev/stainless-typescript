@@ -29,7 +29,7 @@ export {
   type BuildListParams,
   type BuildRetrieveByBuildNumberParams,
 } from './builds';
-export { Commits, type CommitRetrieveParams, type CommitListParams } from './commits';
+export { Commits, type CommitListParams } from './commits';
 export {
   CustomDomains,
   type CustomDomainRetrieveParams,

@@ -4,21 +4,8 @@ import { APIResource } from '../../../core/resource';
 import { APIPromise } from '../../../core/api-promise';
 import { buildHeaders } from '../../../internal/headers';
 import { RequestOptions } from '../../../internal/request-options';
-import { path } from '../../../internal/utils/path';
 
 export class Commits extends APIResource {
-  /**
-   * Fetches detailed information for a specific commit SHA within the specified
-   * project's linked Git repository.
-   */
-  retrieve(commitSha: string, params: CommitRetrieveParams, options?: RequestOptions): APIPromise<void> {
-    const { 'td-project-id': tdProjectID } = params;
-    return this._client.get(path`/api/v1/commits/${commitSha}`, {
-      ...options,
-      headers: buildHeaders([{ Accept: '*/*', 'td-project-id': tdProjectID }, options?.headers]),
-    });
-  }
-
   /**
    * Fetches the commits for the specified project from its linked Git repository
    * with pagination support.
@@ -31,10 +18,6 @@ export class Commits extends APIResource {
       headers: buildHeaders([{ Accept: '*/*', 'td-project-id': tdProjectID }, options?.headers]),
     });
   }
-}
-
-export interface CommitRetrieveParams {
-  'td-project-id': string;
 }
 
 export interface CommitListParams {
@@ -56,14 +39,14 @@ export interface CommitListParams {
   /**
    * Query param:
    */
-  page?: string;
+  page?: string | number;
 
   /**
    * Query param:
    */
-  per_page?: string;
+  per_page?: string | number;
 }
 
 export declare namespace Commits {
-  export { type CommitRetrieveParams as CommitRetrieveParams, type CommitListParams as CommitListParams };
+  export { type CommitListParams as CommitListParams };
 }

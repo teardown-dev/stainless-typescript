@@ -32,7 +32,7 @@ import {
   Builds,
 } from './builds';
 import * as CommitsAPI from './commits';
-import { CommitListParams, CommitRetrieveParams, Commits } from './commits';
+import { CommitListParams, Commits } from './commits';
 import * as DeepLinksAPI from './deep-links';
 import {
   DeepLinkDeepLinksParams,
@@ -326,11 +326,7 @@ export declare namespace V1 {
     type BuildRetrieveByBuildNumberParams as BuildRetrieveByBuildNumberParams,
   };
 
-  export {
-    Commits as Commits,
-    type CommitRetrieveParams as CommitRetrieveParams,
-    type CommitListParams as CommitListParams,
-  };
+  export { Commits as Commits, type CommitListParams as CommitListParams };
 
   export {
     CustomDomains as CustomDomains,
