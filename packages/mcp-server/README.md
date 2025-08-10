@@ -231,7 +231,6 @@ The following tools are available in this MCP server.
 
 ### Resource `api.v1.commits`:
 
-- `retrieve_v1_api_commits` (`read`): Fetches detailed information for a specific commit SHA within the specified project's linked Git repository.
 - `list_v1_api_commits` (`read`): Fetches the commits for the specified project from its linked Git repository with pagination support.
 
 ### Resource `api.v1.custom_domains`:

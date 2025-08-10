@@ -101,6 +101,8 @@ export interface ProjectUpdateParams {
 
   project_type?: 'TAURI' | 'REACT_NATIVE' | 'REACT_NATIVE_EXPO' | 'ANDROID' | 'IOS' | 'LYNX' | 'FLUTTER';
 
+  release_branch?: string | null;
+
   working_branch?: string;
 }
 

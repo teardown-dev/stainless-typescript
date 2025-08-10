@@ -94,7 +94,6 @@ Methods:
 
 Methods:
 
-- <code title="get /api/v1/commits/{commitSha}">client.api.v1.commits.<a href="./src/resources/api/v1/commits.ts">retrieve</a>(commitSha, { ...params }) -> void</code>
 - <code title="get /api/v1/commits">client.api.v1.commits.<a href="./src/resources/api/v1/commits.ts">list</a>({ ...params }) -> void</code>
 
 ### CustomDomains

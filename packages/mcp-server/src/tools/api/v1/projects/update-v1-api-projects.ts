@@ -34,6 +34,9 @@ export const tool: Tool = {
         type: 'string',
         enum: ['TAURI', 'REACT_NATIVE', 'REACT_NATIVE_EXPO', 'ANDROID', 'IOS', 'LYNX', 'FLUTTER'],
       },
+      release_branch: {
+        type: 'string',
+      },
       working_branch: {
         type: 'string',
       },
