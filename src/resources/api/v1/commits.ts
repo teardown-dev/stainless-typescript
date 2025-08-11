@@ -39,12 +39,12 @@ export interface CommitListParams {
   /**
    * Query param:
    */
-  page?: string | number;
+  page?: number;
 
   /**
    * Query param:
    */
-  per_page?: string | number;
+  per_page?: number;
 }
 
 export declare namespace Commits {

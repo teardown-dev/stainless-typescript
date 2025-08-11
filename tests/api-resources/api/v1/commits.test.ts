@@ -26,8 +26,8 @@ describe('resource commits', () => {
       'td-project-id': 'td-project-id',
       branch_name: 'branch_name',
       commit_sha: 'commit_sha',
-      page: 'string',
-      per_page: 'string',
+      page: 0,
+      per_page: 0,
     });
   });
 });
