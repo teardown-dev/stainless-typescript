@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.15 (2025-08-11)
+
+Full Changelog: [v0.1.0-alpha.14...v0.1.0-alpha.15](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.14...v0.1.0-alpha.15)
+
+### Features
+
+* **api:** api update ([5bc331c](https://github.com/teardown-dev/stainless-typescript/commit/5bc331c9f6592f6495c600024e936f57b2e680bb))
+
 ## 0.1.0-alpha.14 (2025-08-10)
 
 Full Changelog: [v0.1.0-alpha.13...v0.1.0-alpha.14](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.13...v0.1.0-alpha.14)
