@@ -31,24 +31,10 @@ export const tool: Tool = {
         type: 'string',
       },
       page: {
-        anyOf: [
-          {
-            type: 'string',
-          },
-          {
-            type: 'number',
-          },
-        ],
+        type: 'number',
       },
       per_page: {
-        anyOf: [
-          {
-            type: 'string',
-          },
-          {
-            type: 'number',
-          },
-        ],
+        type: 'number',
       },
     },
     required: ['td-project-id'],
