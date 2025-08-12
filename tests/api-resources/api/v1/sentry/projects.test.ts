@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource projects', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.api.v1.sentry.projects.retrieve('slug', {
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.api.v1.sentry.projects.retrieve('slug', {
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.api.v1.sentry.projects.list({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -41,12 +41,12 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.api.v1.sentry.projects.list({ 'td-project-id': 'td-project-id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveSearch: only required params', async () => {
     const responsePromise = client.api.v1.sentry.projects.retrieveSearch({
       q: 'q',
@@ -61,7 +61,7 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveSearch: required and optional params', async () => {
     const response = await client.api.v1.sentry.projects.retrieveSearch({
       q: 'q',
@@ -69,7 +69,7 @@ describe('resource projects', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveSummary: only required params', async () => {
     const responsePromise = client.api.v1.sentry.projects.retrieveSummary({
       'td-project-id': 'td-project-id',
@@ -83,7 +83,7 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveSummary: required and optional params', async () => {
     const response = await client.api.v1.sentry.projects.retrieveSummary({
       'td-project-id': 'td-project-id',

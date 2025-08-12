@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource organisations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.api.v1.organisations.create({ name: 'name', type: 'PERSONAL' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource organisations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.api.v1.organisations.create({ name: 'name', type: 'PERSONAL' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.api.v1.organisations.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -37,7 +37,7 @@ describe('resource organisations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.api.v1.organisations.update('id', {});
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource organisations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.api.v1.organisations.list();
     const rawResponse = await responsePromise.asResponse();
@@ -61,7 +61,7 @@ describe('resource organisations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.api.v1.organisations.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -73,7 +73,7 @@ describe('resource organisations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveMembers', async () => {
     const responsePromise = client.api.v1.organisations.retrieveMembers('id');
     const rawResponse = await responsePromise.asResponse();

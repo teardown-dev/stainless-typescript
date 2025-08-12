@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource runs', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.api.v1.workflows.providers.workflows.runs.retrieve('runId', {
       providerType: 'GITHUB',
@@ -24,7 +24,7 @@ describe('resource runs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.api.v1.workflows.providers.workflows.runs.retrieve('runId', {
       providerType: 'GITHUB',
@@ -33,7 +33,7 @@ describe('resource runs', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.api.v1.workflows.providers.workflows.runs.list('workflowId', {
       providerType: 'GITHUB',
@@ -48,7 +48,7 @@ describe('resource runs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.api.v1.workflows.providers.workflows.runs.list('workflowId', {
       providerType: 'GITHUB',
@@ -60,7 +60,7 @@ describe('resource runs', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('trigger: only required params', async () => {
     const responsePromise = client.api.v1.workflows.providers.workflows.runs.trigger('workflowId', {
       providerType: 'GITHUB',
@@ -77,7 +77,7 @@ describe('resource runs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('trigger: required and optional params', async () => {
     const response = await client.api.v1.workflows.providers.workflows.runs.trigger('workflowId', {
       providerType: 'GITHUB',

@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource webhook', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.api.v1.sentry.webhook.create({
       action: 'action',
@@ -29,7 +29,7 @@ describe('resource webhook', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.api.v1.sentry.webhook.create({
       action: 'action',
@@ -43,7 +43,7 @@ describe('resource webhook', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('test: only required params', async () => {
     const responsePromise = client.api.v1.sentry.webhook.test({ body: {} });
     const rawResponse = await responsePromise.asResponse();
@@ -55,7 +55,7 @@ describe('resource webhook', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('test: required and optional params', async () => {
     const response = await client.api.v1.sentry.webhook.test({
       body: {},

@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource installation', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.api.v1.github.installation.create({
       'td-organisation-id': 'td-organisation-id',
@@ -22,14 +22,14 @@ describe('resource installation', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.api.v1.github.installation.create({
       'td-organisation-id': 'td-organisation-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.api.v1.github.installation.list({
       'td-organisation-id': 'td-organisation-id',
@@ -43,14 +43,14 @@ describe('resource installation', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.api.v1.github.installation.list({
       'td-organisation-id': 'td-organisation-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveCallback: only required params', async () => {
     const responsePromise = client.api.v1.github.installation.retrieveCallback({
       installation_id: 'installation_id',
@@ -65,7 +65,7 @@ describe('resource installation', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveCallback: required and optional params', async () => {
     const response = await client.api.v1.github.installation.retrieveCallback({
       installation_id: 'installation_id',

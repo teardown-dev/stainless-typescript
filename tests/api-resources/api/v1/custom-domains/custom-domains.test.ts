@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource customDomains', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.api.v1.customDomains.retrieve('id', { 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource customDomains', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.api.v1.customDomains.retrieve('id', { 'td-project-id': 'td-project-id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.api.v1.customDomains.update('id', { 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -37,7 +37,7 @@ describe('resource customDomains', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.api.v1.customDomains.update('id', {
       'td-project-id': 'td-project-id',
@@ -48,7 +48,7 @@ describe('resource customDomains', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.api.v1.customDomains.delete('id', { 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -60,12 +60,12 @@ describe('resource customDomains', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.api.v1.customDomains.delete('id', { 'td-project-id': 'td-project-id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('customDomains: only required params', async () => {
     const responsePromise = client.api.v1.customDomains.customDomains({
       domain:
@@ -82,7 +82,7 @@ describe('resource customDomains', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('customDomains: required and optional params', async () => {
     const response = await client.api.v1.customDomains.customDomains({
       domain:
@@ -94,7 +94,7 @@ describe('resource customDomains', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('lookupByDomain', async () => {
     const responsePromise = client.api.v1.customDomains.lookupByDomain('domainName');
     const rawResponse = await responsePromise.asResponse();
@@ -106,7 +106,7 @@ describe('resource customDomains', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveCustomDomains: only required params', async () => {
     const responsePromise = client.api.v1.customDomains.retrieveCustomDomains({
       'td-project-id': 'td-project-id',
@@ -120,7 +120,7 @@ describe('resource customDomains', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveCustomDomains: required and optional params', async () => {
     const response = await client.api.v1.customDomains.retrieveCustomDomains({
       'td-project-id': 'td-project-id',

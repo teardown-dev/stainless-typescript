@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource buildConfig', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBuildConfig: only required params', async () => {
     const responsePromise = client.api.v1.buildConfig.retrieveBuildConfig({
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource buildConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBuildConfig: required and optional params', async () => {
     const response = await client.api.v1.buildConfig.retrieveBuildConfig({
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateBuildConfig: only required params', async () => {
     const responsePromise = client.api.v1.buildConfig.updateBuildConfig({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -41,7 +41,7 @@ describe('resource buildConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateBuildConfig: required and optional params', async () => {
     const response = await client.api.v1.buildConfig.updateBuildConfig({
       'td-project-id': 'td-project-id',

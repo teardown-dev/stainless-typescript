@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource email', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('authHook', async () => {
     const responsePromise = client.api.v1.webhooks.email.authHook();
     const rawResponse = await responsePromise.asResponse();

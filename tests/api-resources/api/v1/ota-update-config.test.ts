@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource otaUpdateConfig', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveOtaUpdateConfig: only required params', async () => {
     const responsePromise = client.api.v1.otaUpdateConfig.retrieveOtaUpdateConfig({
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource otaUpdateConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveOtaUpdateConfig: required and optional params', async () => {
     const response = await client.api.v1.otaUpdateConfig.retrieveOtaUpdateConfig({
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateOtaUpdateConfig: only required params', async () => {
     const responsePromise = client.api.v1.otaUpdateConfig.updateOtaUpdateConfig({
       'td-project-id': 'td-project-id',
@@ -43,7 +43,7 @@ describe('resource otaUpdateConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateOtaUpdateConfig: required and optional params', async () => {
     const response = await client.api.v1.otaUpdateConfig.updateOtaUpdateConfig({
       'td-project-id': 'td-project-id',

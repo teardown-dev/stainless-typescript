@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource workflows', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.api.v1.workflows.providers.workflows.list('GITHUB', {
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource workflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.api.v1.workflows.providers.workflows.list('GITHUB', {
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveParams: only required params', async () => {
     const responsePromise = client.api.v1.workflows.providers.workflows.retrieveParams('workflowId', {
       providerType: 'GITHUB',
@@ -44,7 +44,7 @@ describe('resource workflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveParams: required and optional params', async () => {
     const response = await client.api.v1.workflows.providers.workflows.retrieveParams('workflowId', {
       providerType: 'GITHUB',

@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource appstoreConnectConfig', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppstoreConnectConfig: only required params', async () => {
     const responsePromise = client.api.v1.appstoreConnectConfig.retrieveAppstoreConnectConfig({
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource appstoreConnectConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveAppstoreConnectConfig: required and optional params', async () => {
     const response = await client.api.v1.appstoreConnectConfig.retrieveAppstoreConnectConfig({
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateAppstoreConnectConfig: only required params', async () => {
     const responsePromise = client.api.v1.appstoreConnectConfig.updateAppstoreConnectConfig({
       'td-project-id': 'td-project-id',
@@ -43,7 +43,7 @@ describe('resource appstoreConnectConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateAppstoreConnectConfig: required and optional params', async () => {
     const response = await client.api.v1.appstoreConnectConfig.updateAppstoreConnectConfig({
       'td-project-id': 'td-project-id',

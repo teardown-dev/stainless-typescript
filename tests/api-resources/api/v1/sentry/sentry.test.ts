@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource sentry', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('refreshToken: only required params', async () => {
     const responsePromise = client.api.v1.sentry.refreshToken({
       installationId: 'installationId',
@@ -23,7 +23,7 @@ describe('resource sentry', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('refreshToken: required and optional params', async () => {
     const response = await client.api.v1.sentry.refreshToken({
       installationId: 'installationId',
@@ -31,7 +31,7 @@ describe('resource sentry', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveSetup: only required params', async () => {
     const responsePromise = client.api.v1.sentry.retrieveSetup({
       code: 'code',
@@ -46,7 +46,7 @@ describe('resource sentry', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveSetup: required and optional params', async () => {
     const response = await client.api.v1.sentry.retrieveSetup({
       code: 'code',
