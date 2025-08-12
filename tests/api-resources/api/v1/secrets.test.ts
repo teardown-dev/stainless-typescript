@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource secrets', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.api.v1.secrets.retrieve('secretId');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource secrets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.api.v1.secrets.update('name', {
       entity_type: 'user',
@@ -36,7 +36,7 @@ describe('resource secrets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.api.v1.secrets.update('name', {
       entity_type: 'user',
@@ -45,7 +45,7 @@ describe('resource secrets', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveByName: only required params', async () => {
     const responsePromise = client.api.v1.secrets.retrieveByName('name', {
       entity_type: 'user',
@@ -60,7 +60,7 @@ describe('resource secrets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveByName: required and optional params', async () => {
     const response = await client.api.v1.secrets.retrieveByName('name', {
       entity_type: 'user',
@@ -68,7 +68,7 @@ describe('resource secrets', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveForEntity: only required params', async () => {
     const responsePromise = client.api.v1.secrets.retrieveForEntity('entity_id', { entity_type: 'user' });
     const rawResponse = await responsePromise.asResponse();
@@ -80,12 +80,12 @@ describe('resource secrets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveForEntity: required and optional params', async () => {
     const response = await client.api.v1.secrets.retrieveForEntity('entity_id', { entity_type: 'user' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveOrganisationSecret: only required params', async () => {
     const responsePromise = client.api.v1.secrets.retrieveOrganisationSecret('name', { orgId: 'orgId' });
     const rawResponse = await responsePromise.asResponse();
@@ -97,12 +97,12 @@ describe('resource secrets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveOrganisationSecret: required and optional params', async () => {
     const response = await client.api.v1.secrets.retrieveOrganisationSecret('name', { orgId: 'orgId' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveProjectSecret: only required params', async () => {
     const responsePromise = client.api.v1.secrets.retrieveProjectSecret('name', { projectId: 'projectId' });
     const rawResponse = await responsePromise.asResponse();
@@ -114,12 +114,12 @@ describe('resource secrets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveProjectSecret: required and optional params', async () => {
     const response = await client.api.v1.secrets.retrieveProjectSecret('name', { projectId: 'projectId' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveUserSecret: only required params', async () => {
     const responsePromise = client.api.v1.secrets.retrieveUserSecret('name', { userId: 'userId' });
     const rawResponse = await responsePromise.asResponse();
@@ -131,7 +131,7 @@ describe('resource secrets', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveUserSecret: required and optional params', async () => {
     const response = await client.api.v1.secrets.retrieveUserSecret('name', { userId: 'userId' });
   });

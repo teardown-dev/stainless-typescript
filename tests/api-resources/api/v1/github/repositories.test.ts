@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource repositories', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.api.v1.github.repositories.list({
       'td-organisation-id': 'td-organisation-id',
@@ -22,14 +22,14 @@ describe('resource repositories', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.api.v1.github.repositories.list({
       'td-organisation-id': 'td-organisation-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('connect: only required params', async () => {
     const responsePromise = client.api.v1.github.repositories.connect({
       projectId: 'projectId',
@@ -44,7 +44,7 @@ describe('resource repositories', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('connect: required and optional params', async () => {
     const response = await client.api.v1.github.repositories.connect({
       projectId: 'projectId',
@@ -52,7 +52,7 @@ describe('resource repositories', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveProject: only required params', async () => {
     const responsePromise = client.api.v1.github.repositories.retrieveProject({
       'td-project-id': 'td-project-id',
@@ -66,7 +66,7 @@ describe('resource repositories', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveProject: required and optional params', async () => {
     const response = await client.api.v1.github.repositories.retrieveProject({
       'td-project-id': 'td-project-id',

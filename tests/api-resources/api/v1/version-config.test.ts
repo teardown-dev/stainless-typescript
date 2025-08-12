@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource versionConfig', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveVersionConfig: only required params', async () => {
     const responsePromise = client.api.v1.versionConfig.retrieveVersionConfig({
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource versionConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveVersionConfig: required and optional params', async () => {
     const response = await client.api.v1.versionConfig.retrieveVersionConfig({
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateVersionConfig: only required params', async () => {
     const responsePromise = client.api.v1.versionConfig.updateVersionConfig({
       'td-project-id': 'td-project-id',
@@ -43,7 +43,7 @@ describe('resource versionConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateVersionConfig: required and optional params', async () => {
     const response = await client.api.v1.versionConfig.updateVersionConfig({
       'td-project-id': 'td-project-id',

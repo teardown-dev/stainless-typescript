@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource builds', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.api.v1.appStoreConnect.builds.retrieve('id', {
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource builds', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.api.v1.appStoreConnect.builds.retrieve('id', {
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.api.v1.appStoreConnect.builds.list({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -41,7 +41,7 @@ describe('resource builds', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.api.v1.appStoreConnect.builds.list({
       'td-project-id': 'td-project-id',

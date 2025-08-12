@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource github', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveTags: only required params', async () => {
     const responsePromise = client.api.v1.github.retrieveTags({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource github', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveTags: required and optional params', async () => {
     const response = await client.api.v1.github.retrieveTags({
       'td-project-id': 'td-project-id',
@@ -29,7 +29,7 @@ describe('resource github', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('webhook', async () => {
     const responsePromise = client.api.v1.github.webhook();
     const rawResponse = await responsePromise.asResponse();

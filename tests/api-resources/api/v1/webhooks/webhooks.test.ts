@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource webhooks', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('database', async () => {
     const responsePromise = client.api.v1.webhooks.database();
     const rawResponse = await responsePromise.asResponse();

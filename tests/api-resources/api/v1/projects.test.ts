@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource projects', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.api.v1.projects.create({
       name: 'name',
@@ -25,7 +25,7 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.api.v1.projects.create({
       name: 'name',
@@ -36,7 +36,7 @@ describe('resource projects', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.api.v1.projects.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -48,7 +48,7 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.api.v1.projects.update('id', {});
     const rawResponse = await responsePromise.asResponse();
@@ -60,7 +60,7 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.api.v1.projects.list({ 'td-organisation-id': 'td-organisation-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -72,12 +72,12 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.api.v1.projects.list({ 'td-organisation-id': 'td-organisation-id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.api.v1.projects.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -89,7 +89,7 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('transfer: only required params', async () => {
     const responsePromise = client.api.v1.projects.transfer({
       destination_org_id: 'destination_org_id',
@@ -104,7 +104,7 @@ describe('resource projects', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('transfer: required and optional params', async () => {
     const response = await client.api.v1.projects.transfer({
       destination_org_id: 'destination_org_id',

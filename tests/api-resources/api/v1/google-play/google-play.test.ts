@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource googlePlay', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBuilds: only required params', async () => {
     const responsePromise = client.api.v1.googlePlay.retrieveBuilds({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource googlePlay', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBuilds: required and optional params', async () => {
     const response = await client.api.v1.googlePlay.retrieveBuilds({
       'td-project-id': 'td-project-id',
@@ -28,7 +28,7 @@ describe('resource googlePlay', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveStatus: only required params', async () => {
     const responsePromise = client.api.v1.googlePlay.retrieveStatus({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -40,7 +40,7 @@ describe('resource googlePlay', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveStatus: required and optional params', async () => {
     const response = await client.api.v1.googlePlay.retrieveStatus({ 'td-project-id': 'td-project-id' });
   });

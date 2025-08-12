@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource feedback', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.api.v1.feedback.create({
       feedback: 'xxxxxxxxxx',
@@ -24,7 +24,7 @@ describe('resource feedback', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.api.v1.feedback.create({
       feedback: 'xxxxxxxxxx',
@@ -33,7 +33,7 @@ describe('resource feedback', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.api.v1.feedback.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -45,7 +45,7 @@ describe('resource feedback', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.api.v1.feedback.list();
     const rawResponse = await responsePromise.asResponse();

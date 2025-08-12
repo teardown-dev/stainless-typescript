@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource googlePlayConfig', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGooglePlayConfig: only required params', async () => {
     const responsePromise = client.api.v1.googlePlayConfig.retrieveGooglePlayConfig({
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource googlePlayConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveGooglePlayConfig: required and optional params', async () => {
     const response = await client.api.v1.googlePlayConfig.retrieveGooglePlayConfig({
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateGooglePlayConfig: only required params', async () => {
     const responsePromise = client.api.v1.googlePlayConfig.updateGooglePlayConfig({
       'td-project-id': 'td-project-id',
@@ -43,7 +43,7 @@ describe('resource googlePlayConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateGooglePlayConfig: required and optional params', async () => {
     const response = await client.api.v1.googlePlayConfig.updateGooglePlayConfig({
       'td-project-id': 'td-project-id',

@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource bitriseConfig', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBitriseConfig: only required params', async () => {
     const responsePromise = client.api.v1.bitriseConfig.retrieveBitriseConfig({
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource bitriseConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveBitriseConfig: required and optional params', async () => {
     const response = await client.api.v1.bitriseConfig.retrieveBitriseConfig({
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateBitriseConfig: only required params', async () => {
     const responsePromise = client.api.v1.bitriseConfig.updateBitriseConfig({
       'td-project-id': 'td-project-id',
@@ -43,7 +43,7 @@ describe('resource bitriseConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateBitriseConfig: required and optional params', async () => {
     const response = await client.api.v1.bitriseConfig.updateBitriseConfig({
       'td-project-id': 'td-project-id',

@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource v1', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrievePersons: only required params', async () => {
     const responsePromise = client.api.v1.retrievePersons({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource v1', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrievePersons: required and optional params', async () => {
     const response = await client.api.v1.retrievePersons({
       'td-project-id': 'td-project-id',
@@ -29,7 +29,7 @@ describe('resource v1', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveReleases: only required params', async () => {
     const responsePromise = client.api.v1.retrieveReleases({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -41,7 +41,7 @@ describe('resource v1', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveReleases: required and optional params', async () => {
     const response = await client.api.v1.retrieveReleases({ 'td-project-id': 'td-project-id' });
   });
