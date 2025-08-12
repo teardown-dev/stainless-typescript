@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource tauriConfig', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveTauriConfig: only required params', async () => {
     const responsePromise = client.api.v1.tauriConfig.retrieveTauriConfig({
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource tauriConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveTauriConfig: required and optional params', async () => {
     const response = await client.api.v1.tauriConfig.retrieveTauriConfig({
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateTauriConfig: only required params', async () => {
     const responsePromise = client.api.v1.tauriConfig.updateTauriConfig({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -41,7 +41,7 @@ describe('resource tauriConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateTauriConfig: required and optional params', async () => {
     const response = await client.api.v1.tauriConfig.updateTauriConfig({
       'td-project-id': 'td-project-id',

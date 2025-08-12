@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('top level methods', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getStatus', async () => {
     const responsePromise = client.getStatus();
     const rawResponse = await responsePromise.asResponse();

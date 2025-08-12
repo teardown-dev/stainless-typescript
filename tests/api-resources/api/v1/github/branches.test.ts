@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource branches', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.api.v1.github.branches.list({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource branches', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.api.v1.github.branches.list({ 'td-project-id': 'td-project-id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRef: only required params', async () => {
     const responsePromise = client.api.v1.github.branches.retrieveRef({
       ref: 'ref',
@@ -40,7 +40,7 @@ describe('resource branches', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveRef: required and optional params', async () => {
     const response = await client.api.v1.github.branches.retrieveRef({
       ref: 'ref',

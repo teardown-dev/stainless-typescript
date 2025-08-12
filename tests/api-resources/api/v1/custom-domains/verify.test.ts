@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource verify', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.api.v1.customDomains.verify.create('id', {
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource verify', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.api.v1.customDomains.verify.create('id', {
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.api.v1.customDomains.verify.retrieve('domain', {
       'td-project-id': 'td-project-id',
@@ -43,7 +43,7 @@ describe('resource verify', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.api.v1.customDomains.verify.retrieve('domain', {
       'td-project-id': 'td-project-id',

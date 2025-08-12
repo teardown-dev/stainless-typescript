@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource distributionGroups', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('distributionGroups: only required params', async () => {
     const responsePromise = client.api.v1.appStoreConnect.distributionGroups.distributionGroups({
       name: 'name',
@@ -23,7 +23,7 @@ describe('resource distributionGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('distributionGroups: required and optional params', async () => {
     const response = await client.api.v1.appStoreConnect.distributionGroups.distributionGroups({
       name: 'name',
@@ -32,7 +32,7 @@ describe('resource distributionGroups', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveDistributionGroups: only required params', async () => {
     const responsePromise = client.api.v1.appStoreConnect.distributionGroups.retrieveDistributionGroups({
       'td-project-id': 'td-project-id',
@@ -46,7 +46,7 @@ describe('resource distributionGroups', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveDistributionGroups: required and optional params', async () => {
     const response = await client.api.v1.appStoreConnect.distributionGroups.retrieveDistributionGroups({
       'td-project-id': 'td-project-id',

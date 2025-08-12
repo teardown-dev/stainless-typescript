@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource deepLinks', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.api.v1.deepLinks.retrieve('id', { 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource deepLinks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.api.v1.deepLinks.retrieve('id', { 'td-project-id': 'td-project-id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.api.v1.deepLinks.update('id', { 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -37,7 +37,7 @@ describe('resource deepLinks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.api.v1.deepLinks.update('id', {
       'td-project-id': 'td-project-id',
@@ -53,7 +53,7 @@ describe('resource deepLinks', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.api.v1.deepLinks.delete('id', { 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -65,12 +65,12 @@ describe('resource deepLinks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.api.v1.deepLinks.delete('id', { 'td-project-id': 'td-project-id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('deepLinks: only required params', async () => {
     const responsePromise = client.api.v1.deepLinks.deepLinks({
       short_code: 'SQfNkl1n-JR-',
@@ -86,7 +86,7 @@ describe('resource deepLinks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('deepLinks: required and optional params', async () => {
     const response = await client.api.v1.deepLinks.deepLinks({
       short_code: 'SQfNkl1n-JR-',
@@ -103,7 +103,7 @@ describe('resource deepLinks', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveByShortCode', async () => {
     const responsePromise = client.api.v1.deepLinks.retrieveByShortCode('shortCode');
     const rawResponse = await responsePromise.asResponse();
@@ -115,7 +115,7 @@ describe('resource deepLinks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveDeepLinks: only required params', async () => {
     const responsePromise = client.api.v1.deepLinks.retrieveDeepLinks({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -127,7 +127,7 @@ describe('resource deepLinks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveDeepLinks: required and optional params', async () => {
     const response = await client.api.v1.deepLinks.retrieveDeepLinks({ 'td-project-id': 'td-project-id' });
   });

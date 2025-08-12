@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource user', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveCurrent', async () => {
     const responsePromise = client.api.v1.user.retrieveCurrent();
     const rawResponse = await responsePromise.asResponse();

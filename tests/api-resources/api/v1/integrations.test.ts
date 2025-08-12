@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource integrations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.api.v1.integrations.retrieve('APP_STORE_CONNECT', {
       'td-project-id': 'td-project-id',
@@ -22,14 +22,14 @@ describe('resource integrations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.api.v1.integrations.retrieve('APP_STORE_CONNECT', {
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.api.v1.integrations.update('APP_STORE_CONNECT', {
       'td-project-id': 'td-project-id',
@@ -43,14 +43,14 @@ describe('resource integrations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.api.v1.integrations.update('APP_STORE_CONNECT', {
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.api.v1.integrations.list({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -62,12 +62,12 @@ describe('resource integrations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.api.v1.integrations.list({ 'td-project-id': 'td-project-id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveValidate: only required params', async () => {
     const responsePromise = client.api.v1.integrations.retrieveValidate('APP_STORE_CONNECT', {
       'td-project-id': 'td-project-id',
@@ -81,14 +81,14 @@ describe('resource integrations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveValidate: required and optional params', async () => {
     const response = await client.api.v1.integrations.retrieveValidate('APP_STORE_CONNECT', {
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveValues: only required params', async () => {
     const responsePromise = client.api.v1.integrations.retrieveValues('APP_STORE_CONNECT', {
       'td-project-id': 'td-project-id',
@@ -102,14 +102,14 @@ describe('resource integrations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveValues: required and optional params', async () => {
     const response = await client.api.v1.integrations.retrieveValues('APP_STORE_CONNECT', {
       'td-project-id': 'td-project-id',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateStatus: only required params', async () => {
     const responsePromise = client.api.v1.integrations.updateStatus('APP_STORE_CONNECT', {
       status: 'NOT_CONFIGURED',
@@ -124,7 +124,7 @@ describe('resource integrations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateStatus: required and optional params', async () => {
     const response = await client.api.v1.integrations.updateStatus('APP_STORE_CONNECT', {
       status: 'NOT_CONFIGURED',

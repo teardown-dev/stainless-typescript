@@ -8,7 +8,7 @@ const client = new Teardown({
 });
 
 describe('resource expoConfig', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveExpoConfig: only required params', async () => {
     const responsePromise = client.api.v1.expoConfig.retrieveExpoConfig({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource expoConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveExpoConfig: required and optional params', async () => {
     const response = await client.api.v1.expoConfig.retrieveExpoConfig({ 'td-project-id': 'td-project-id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateExpoConfig: only required params', async () => {
     const responsePromise = client.api.v1.expoConfig.updateExpoConfig({ 'td-project-id': 'td-project-id' });
     const rawResponse = await responsePromise.asResponse();
@@ -37,7 +37,7 @@ describe('resource expoConfig', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateExpoConfig: required and optional params', async () => {
     const response = await client.api.v1.expoConfig.updateExpoConfig({
       'td-project-id': 'td-project-id',
