@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.1.0-alpha.16 (2025-08-15)
+
+Full Changelog: [v0.1.0-alpha.15...v0.1.0-alpha.16](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.15...v0.1.0-alpha.16)
+
+### Bug Fixes
+
+* **mcp:** generate additionalProperties=true for map schemas to avoid validation issues ([4d6dd8c](https://github.com/teardown-dev/stainless-typescript/commit/4d6dd8c09d74fdb33282a246980f7b3bbf4f6b3f))
+
+
+### Chores
+
+* **internal:** codegen related update ([d2df35d](https://github.com/teardown-dev/stainless-typescript/commit/d2df35dfd4da172600f2c3574256b89534fe0393))
+* **mcp:** document remote server in README.md ([1e05aa8](https://github.com/teardown-dev/stainless-typescript/commit/1e05aa88d615c141df3e6c90ccba2e09dae78dd5))
+* **mcp:** minor cleanup of types and package.json ([9656449](https://github.com/teardown-dev/stainless-typescript/commit/9656449fd0d02069e679531ef42ce5072fb091e6))
+
 ## 0.1.0-alpha.15 (2025-08-11)
 
 Full Changelog: [v0.1.0-alpha.14...v0.1.0-alpha.15](https://github.com/teardown-dev/stainless-typescript/compare/v0.1.0-alpha.14...v0.1.0-alpha.15)
