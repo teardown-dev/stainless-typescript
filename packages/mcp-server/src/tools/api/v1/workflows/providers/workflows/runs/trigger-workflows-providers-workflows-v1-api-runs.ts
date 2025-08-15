@@ -38,6 +38,7 @@ export const tool: Tool = {
       },
       inputs: {
         type: 'object',
+        additionalProperties: true,
       },
     },
     required: ['providerType', 'workflowId', 'branchName', 'commitSha', 'td-project-id'],

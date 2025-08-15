@@ -48,6 +48,7 @@ export const tool: Tool = {
       },
       data: {
         type: 'object',
+        additionalProperties: true,
       },
       installation: {
         type: 'object',

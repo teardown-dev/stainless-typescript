@@ -22,6 +22,7 @@ export const tool: Tool = {
     properties: {
       body: {
         type: 'object',
+        additionalProperties: true,
       },
       'x-sentry-signature': {
         type: 'string',
