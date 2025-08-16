@@ -301,7 +301,6 @@ The following tools are available in this MCP server.
 ### Resource `api.v1.github`:
 
 - `retrieve_tags_v1_api_github` (`read`): Fetches a paginated list of tags from the GitHub repository associated with the specified project ID.
-- `webhook_v1_api_github` (`write`): Receives and processes webhook events sent from GitHub (e.g., installation events, repository changes). This endpoint is typically called by GitHub, not directly by users.
 
 ### Resource `api.v1.github.installation`:
 
