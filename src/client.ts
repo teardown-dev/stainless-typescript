@@ -716,8 +716,10 @@ export class Teardown {
   status: API.Status = new API.Status(this);
   api: API.API = new API.API(this);
 }
+
 Teardown.Status = Status;
 Teardown.API = ApiapiAPI;
+
 export declare namespace Teardown {
   export type RequestOptions = Opts.RequestOptions;
 
