@@ -41,18 +41,6 @@ export class GitHub extends APIResource {
       headers: buildHeaders([{ Accept: '*/*', 'td-project-id': tdProjectID }, options?.headers]),
     });
   }
-
-  /**
-   * Receives and processes webhook events sent from GitHub (e.g., installation
-   * events, repository changes). This endpoint is typically called by GitHub, not
-   * directly by users.
-   */
-  webhook(options?: RequestOptions): APIPromise<void> {
-    return this._client.post('/api/v1/github/webhook', {
-      ...options,
-      headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),
-    });
-  }
 }
 
 export interface GitHubRetrieveTagsParams {
