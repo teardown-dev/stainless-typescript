@@ -62,7 +62,7 @@ describe('resource builds', () => {
 
   // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
-    const response = await client.api.v1.builds.list({ 'td-project-id': 'td-project-id', limit: 0 });
+    const response = await client.api.v1.builds.list({ 'td-project-id': 'td-project-id', limit: 'string' });
   });
 
   // Prism tests are disabled
