@@ -152,7 +152,6 @@ Methods:
 Methods:
 
 - <code title="get /api/v1/github/tags">client.api.v1.github.<a href="./src/resources/api/v1/github/github.ts">retrieveTags</a>({ ...params }) -> void</code>
-- <code title="post /api/v1/github/webhook">client.api.v1.github.<a href="./src/resources/api/v1/github/github.ts">webhook</a>() -> void</code>
 
 #### Installation
 
